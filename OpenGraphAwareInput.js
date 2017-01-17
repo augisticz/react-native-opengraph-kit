@@ -23,6 +23,7 @@ export default class OpenGraphAwareInput extends Component {
         debounceDelay: React.PropTypes.number,
         onChange: React.PropTypes.func,
         textInputStyle: TextInput.propTypes.style,
+        placeholderText: TextInput.propTypes.placeholder
     };
 
     static defaultProps = {
@@ -75,6 +76,7 @@ export default class OpenGraphAwareInput extends Component {
             >
                 <TextInput
                     onChange={this.handleTextInputChange}
+                    placeholder={this.props.placeholderText}
                     style={[
                         styles.input,
                         this.props.textInputStyle,
