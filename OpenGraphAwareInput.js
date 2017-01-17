@@ -75,6 +75,7 @@ export default class OpenGraphAwareInput extends Component {
                 ]}
             >
                 <TextInput
+                    multiline = {true}
                     onChange={this.handleTextInputChange}
                     placeholder={this.props.placeholderText}
                     style={[
